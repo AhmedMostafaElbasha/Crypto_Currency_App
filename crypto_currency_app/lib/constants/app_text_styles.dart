@@ -2,19 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:crypto_currency_app/constants/constants.dart';
 
 class AppTextStyles {
-  static TextStyle get cryptoCurrencyName {
+  static TextStyle get dataTitle {
     return TextStyle(fontWeight: FontWeight.bold);
   }
 
-  static TextStyle get cryptoCurrencyPrice {
+  static TextStyle get dataValue {
     return TextStyle(color: AppColors.black);
   }
 
-  static TextStyle get positiveChangeRate {
-    return TextStyle(color: AppColors.green);
-  }
-
-  static TextStyle get negativeChangeRate {
-    return TextStyle(color: AppColors.red);
+  static TextStyle get stateMessage {
+    return TextStyle(
+      fontSize: 18,
+      fontWeight: FontWeight.bold,
+    );
   }
 }

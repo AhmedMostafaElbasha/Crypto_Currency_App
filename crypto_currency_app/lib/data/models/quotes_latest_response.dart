@@ -1,4 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:json_serializable/json_serializable.dart';
 import 'package:crypto_currency_app/data/data.dart';
 
 part 'quotes_latest_response.g.dart';
@@ -16,5 +17,5 @@ class QuotesLatestResponse {
   factory QuotesLatestResponse.fromJson(Map<String, dynamic> json) =>
       _$QuotesLatestResponseFromJson(json);
 
-  Map<String, dynamic> toJson() => _$QuotesLatestResponseToJson(this);    
+  Map<String, dynamic> toJson() => _$QuotesLatestResponseToJson(this);
 }
