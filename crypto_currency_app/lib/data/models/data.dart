@@ -1,5 +1,4 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:json_serializable/json_serializable.dart';
 import 'package:crypto_currency_app/data/data.dart';
 
 part 'data.g.dart';
@@ -44,7 +43,7 @@ class Data {
   final double derivatives24hPercentageChange;
   final Quote quote;
   @JsonKey(name: "last_updated")
-  final double lastUpdated;
+  final String lastUpdated;
 
   Data({
     this.activeCryptocurrencies,

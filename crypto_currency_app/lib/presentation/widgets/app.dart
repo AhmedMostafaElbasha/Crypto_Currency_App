@@ -24,7 +24,7 @@ class App extends StatelessWidget {
             routes: AppRoutes.routes,
             debugShowCheckedModeBanner: false,
             theme: ThemeData(
-              primarySwatch: AppColors.grey100,
+              primaryColor: AppColors.grey100,
             ),
             title: 'Crypto Currency App',
             supportedLocales: [

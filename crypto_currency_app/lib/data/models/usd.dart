@@ -1,5 +1,4 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:json_serializable/json_serializable.dart';
 
 part 'usd.g.dart';
 
@@ -18,7 +17,7 @@ class USD {
   @JsonKey(name: "altcoin_market_cap")
   final double altcoinMarketCap;
   @JsonKey(name: "last_updated")
-  final double lastUpdated;
+  final String lastUpdated;
 
   USD({
     this.totalMarketCap,

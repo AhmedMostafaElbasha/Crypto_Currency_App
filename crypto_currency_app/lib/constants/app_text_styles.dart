@@ -7,12 +7,23 @@ class AppTextStyles {
   }
 
   static TextStyle get dataValue {
-    return TextStyle(color: AppColors.black);
+    return TextStyle(
+      color: AppColors.black,
+      fontSize: 11,
+    );
   }
 
   static TextStyle get stateMessage {
     return TextStyle(
       fontSize: 18,
+      fontWeight: FontWeight.bold,
+    );
+  }
+
+  static TextStyle get dataSectionHeading {
+    return TextStyle(
+      fontSize: 16,
+      color: AppColors.blueGrey,
       fontWeight: FontWeight.bold,
     );
   }

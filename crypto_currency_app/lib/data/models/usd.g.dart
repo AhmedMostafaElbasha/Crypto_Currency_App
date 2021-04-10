@@ -16,7 +16,7 @@ USD _$USDFromJson(Map<String, dynamic> json) {
     altcoinVolume24hReported:
         (json['altcoin_volume_24h_reported'] as num)?.toDouble(),
     altcoinMarketCap: (json['altcoin_market_cap'] as num)?.toDouble(),
-    lastUpdated: (json['last_updated'] as num)?.toDouble(),
+    lastUpdated: json['last_updated'] as String,
   );
 }
 

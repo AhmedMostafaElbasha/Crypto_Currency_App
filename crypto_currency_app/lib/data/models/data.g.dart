@@ -35,7 +35,7 @@ Data _$DataFromJson(Map<String, dynamic> json) {
     quote: json['quote'] == null
         ? null
         : Quote.fromJson(json['quote'] as Map<String, dynamic>),
-    lastUpdated: (json['last_updated'] as num)?.toDouble(),
+    lastUpdated: json['last_updated'] as String,
   );
 }
 

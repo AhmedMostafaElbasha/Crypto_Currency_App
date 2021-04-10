@@ -12,7 +12,7 @@ Status _$StatusFromJson(Map<String, dynamic> json) {
     errorCode: json['error_code'] as int,
     errorMessage: json['error_message'] as String,
     elapsed: json['elapsed'] as int,
-    creditCount: json['credit_count'] as String,
+    creditCount: json['credit_count'] as int,
     notice: json['notice'] as String,
   );
 }

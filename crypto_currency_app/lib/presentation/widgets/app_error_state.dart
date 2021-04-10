@@ -10,12 +10,14 @@ class AppErrorState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        _errorIcon,
-        _errorMessage,
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          _errorIcon,
+          _errorMessage,
+        ],
+      ),
     );
   }
 

@@ -6,17 +6,21 @@ import 'package:crypto_currency_app/presentation/presentation.dart';
 class AppLoadState extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        _circularProgressIndicator,
-        _pleaseWaitStatement,
-      ],
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          _circularProgressIndicator,
+          _pleaseWaitStatement,
+        ],
+      ),
     );
   }
 
   Widget get _circularProgressIndicator {
-    return CircularProgressIndicator();
+    return CircularProgressIndicator(
+      valueColor: AlwaysStoppedAnimation<Color>(AppColors.black),
+    );
   }
 
   Widget get _pleaseWaitStatement {
